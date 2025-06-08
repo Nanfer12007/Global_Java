@@ -31,7 +31,8 @@ Este projeto é uma API REST desenvolvida com Spring Boot que visa ajudar a miti
 * Railway (Deploy)
 
 ## 📄 Documentação Swagger
-https://<sua-url>.railway.app/swagger-ui/index.html
+https://sua-url.railway.app/swagger-ui/index.html
+- Substitua sua-url na URL gerada pela plataforma de deploy (como Railway)
 
 ## 🛡️ Autenticação com JWT
 
@@ -39,7 +40,8 @@ https://<sua-url>.railway.app/swagger-ui/index.html
 
 - 2 - Login: POST /auth/login → retorna um token JWT
 
-- 3 - Autenticação: Envie o token no cabeçalho Authorization nas requisições protegidas: Authorization: Bearer <seu-token>
+- 3 - Autenticação: Envie o token no cabeçalho Authorization nas requisições protegidas: Authorization: Bearer seu-token
+- Substitua seu-token pelo token JWT que você recebe ao fazer o login
 
 ## 🌍 Deploy na Nuvem
 https://seu-projeto.up.railway.app
@@ -47,7 +49,12 @@ https://seu-projeto.up.railway.app
 - Substitua seu-projeto pela URL gerada na sua conta Railway.
 
 ## 🧪 Como Executar
-git clone [link do projeto]
-cd [projeto]
+```bash
+git https://github.com/Nanfer12007/Global_Java.git
+cd Global_Java
+```
 
 ## 👨‍💻 Autores
+- Kaio Cumpian Silva - RM99816
+- Gabriel Yuji Suzuki - RM556588
+- Lucas Felix Vassiliades - RM97677
