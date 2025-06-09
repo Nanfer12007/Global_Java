@@ -1,0 +1,16 @@
+FROM postgres:15-alpine
+
+# Configurações fixas
+ENV POSTGRES_DB=heatalert \
+    POSTGRES_USER=usuario\
+    POSTGRES_PASSWORD=senha\
+    TZ=America/Sao_Paulo
+
+# Timezone
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Healthcheck
+HEALTHCHECK --interval=10s --timeout=5s \
+    CMD pg_isready -U $POSTGRES_USER
+
+EXPOSE 5432

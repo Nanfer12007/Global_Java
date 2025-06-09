@@ -1,0 +1,9 @@
+{
+  "temperatura": {
+    "cidade": "São Paulo",
+    "temperaturaAtual": 25.5,
+    "temperaturaMaxima": 30.0,
+    "temperaturaMinima": 20.0,
+    "dataHora": "2025-06-08T14:30:00"
+  }
+}
